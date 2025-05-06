@@ -51,9 +51,9 @@
     line-height: 100%;
     letter-spacing: -0.125rem;
     margin: 0;
-    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   p {
@@ -177,50 +177,64 @@
   }
 </style>
 
-<main class="main">
+<!-- <main class="main">
   <h2>Registration Form</h2>
 
-<form #regForm="ngForm" (ngSubmit)="onSubmit()">
-  <div>
-    <label>Full Name:</label>
-    <input type="text" name="fullName" [(ngModel)]="formData.fullName" required />
-  </div>
+  <form #regForm="ngForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label>Full Name:</label>
+      <input
+        type="text"
+        name="fullName"
+        [(ngModel)]="formData.fullName"
+        required
+      />
+    </div>
 
-  <div>
-    <label>Email:</label>
-    <input type="email" name="email" [(ngModel)]="formData.email" required />
-  </div>
+    <div>
+      <label>Email:</label>
+      <input type="email" name="email" [(ngModel)]="formData.email" required />
+    </div>
 
-  <div>
-    <label>Password:</label>
-    <input type="password" name="password" [(ngModel)]="formData.password" required />
-  </div>
+    <div>
+      <label>Password:</label>
+      <input
+        type="password"
+        name="password"
+        [(ngModel)]="formData.password"
+        required
+      />
+    </div>
 
-  <div>
-    <label>Gender:</label>
-    <select name="gender" [(ngModel)]="formData.gender" required>
-      <option value="">Select</option>
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-    </select>
-  </div>
+    <div>
+      <label>Gender:</label>
+      <select name="gender" [(ngModel)]="formData.gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
 
-  <div>
-    <label>
-      <input type="checkbox" name="agree" [(ngModel)]="formData.agree" required />
-      I agree to the terms and conditions
-    </label>
-  </div>
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          name="agree"
+          [(ngModel)]="formData.agree"
+          required
+        />
+        I agree to the terms and conditions
+      </label>
+    </div>
 
-  <button type="submit" [disabled]="!regForm.form.valid">Register</button>
-</form>
+    <button type="submit" [disabled]="!regForm.form.valid">Register</button>
+  </form>
 
-<hr />
+  <hr />
 
-<h3>Form Data (Preview)</h3>
-<pre>{{ formData | json }}</pre>
-
-</main>
+  <h3>Form Data (Preview)</h3>
+  <pre>{{ formData | json }}</pre>
+</main> -->
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
@@ -229,6 +243,5 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 
 <router-outlet />

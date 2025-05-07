@@ -2,14 +2,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Static Website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to My Static Website</h1>
-  <button onclick="sayHello()">Click Me</button>
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
 
-  <script src="script.js"></script>
+    <main class="container">
+        <section class="hero">
+            <h1>Welcome to Our Platform</h1>
+            <p>Your one-stop solution for all your needs</p>
+            <a href="dashboard.html" class="cta-button">Go to Dashboard</a>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Easy to Use</h3>
+                <p>Simple and intuitive interface for the best user experience</p>
+            </div>
+            <div class="feature-card">
+                <h3>Powerful Tools</h3>
+                <p>Access powerful features to boost your productivity</p>
+            </div>
+            <div class="feature-card">
+                <h3>24/7 Support</h3>
+                <p>Our team is always here to help you</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

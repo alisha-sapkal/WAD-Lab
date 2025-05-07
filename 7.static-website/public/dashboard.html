@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MyWebsite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1 class="dashboard-title">Dashboard</h1>
+        
+        <div class="dashboard-grid">
+            <div class="stat-card">
+                <h3>Total Users</h3>
+                <p class="stat-number">1,234</p>
+                <p class="stat-change positive">+12% from last month</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3>Active Projects</h3>
+                <p class="stat-number">56</p>
+                <p class="stat-change positive">+5% from last month</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3>Revenue</h3>
+                <p class="stat-number">$45,678</p>
+                <p class="stat-change positive">+8% from last month</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3>Tasks Completed</h3>
+                <p class="stat-number">789</p>
+                <p class="stat-change positive">+15% from last month</p>
+            </div>
+        </div>
+
+        <div class="dashboard-sections">
+            <section class="recent-activity">
+                <h2>Recent Activity</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <span class="activity-time">10:30 AM</span>
+                        <span class="activity-text">New user registration</span>
+                    </div>
+                    <div class="activity-item">
+                        <span class="activity-time">09:45 AM</span>
+                        <span class="activity-text">Project update completed</span>
+                    </div>
+                    <div class="activity-item">
+                        <span class="activity-time">09:15 AM</span>
+                        <span class="activity-text">New task assigned</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quick-actions">
+                <h2>Quick Actions</h2>
+                <div class="action-buttons">
+                    <button class="action-btn">Add New Project</button>
+                    <button class="action-btn">Create Report</button>
+                    <button class="action-btn">Send Message</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
